@@ -1,5 +1,5 @@
 From nginx:latest
-COPY home.html /usr/share/nginx/html/home.html
+COPY . /app
 
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
